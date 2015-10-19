@@ -1,8 +1,8 @@
 {
   "name": "ncc-redesign",
   "version": "0.0.0",
-  "description": "네X버 카페 채팅 리디자인 프로젝트 ===",
-  "main": "index.js",
+  "description": "네X버 카페 채팅 리디자인 프로젝트",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
