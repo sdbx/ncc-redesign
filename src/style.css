@@ -1,0 +1,16 @@
+/*
+	Overwrite the style of ncc
+*/
+
+.chat_type_inr {
+	margin: 0;
+}
+.chat_room {
+	padding-bottom: 62px;
+}
+.chat_msgs .bl_pcs .blm > span {
+	padding: 0px 9px;
+}
+.chat_msgs .say {
+	padding-right: 60px;
+}

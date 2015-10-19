@@ -1,1 +1,4 @@
-// Enter the code..
+"use strict";
+
+// Overwrite the style of ncc
+require("./style.css");
