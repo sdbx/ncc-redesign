@@ -4,7 +4,7 @@
   "description": "네X버 카페 채팅 리디자인 프로젝트",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/webpack"
   },
   "repository": {
     "type": "git",

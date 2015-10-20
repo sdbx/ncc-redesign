@@ -1,6 +1,8 @@
 네X버 카페 채팅 리디자인 프로젝트
 ===
 
+[![Build Status](https://travis-ci.org/sdbx/ncc-redesign.svg)](https://travis-ci.org/sdbx/ncc-redesign)
+
 # 개요
 
 "바부"같은 웹카채 채팅을 리디자인하는 프로젝트 입니다.
@@ -16,5 +18,5 @@
 # TODO
 
  - [x] padding 조정
- 
+
  추가 바람.
