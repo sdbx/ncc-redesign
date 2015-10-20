@@ -58,6 +58,11 @@
 	// Overwrite the style of ncc
 	__webpack_require__(1);
 
+	if (window.location.href.indexOf("room") !== -1) {
+		// Enable drag and drop photo upload
+		__webpack_require__(5);
+	}
+
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
@@ -74,8 +79,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./style.css", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./style.css");
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/csslint-loader/index.js!./style.css", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/csslint-loader/index.js!./style.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -93,7 +98,7 @@
 
 
 	// module
-	exports.push([module.id, "/*\n\tOverwrite the style of ncc\n*/\n\n.chat_type_inr {\n\tmargin: 0;\n}\n.chat_room {\n\tpadding-bottom: 62px;\n}\n.chat_msgs .bl_pcs .blm > span {\n\tpadding: 0px 9px;\n}\n.chat_msgs .say {\n\tpadding-right: 60px;\n}\n.chat_new_msgs {\n\tbottom: 62px;\n\tleft: 0;\n\tright: 0;\n}", ""]);
+	exports.push([module.id, "/*\n\tOverwrite the style of ncc\n*/\n\n.chat_type_inr {\n\tmargin: 0;\n}\n.chat_room {\n\tpadding-bottom: 62px;\n}\n.chat_msgs .bl_pcs .blm > span {\n\tpadding: 0 9px;\n}\n.chat_msgs .say {\n\tpadding-right: 60px;\n}\n.chat_new_msgs {\n\tbottom: 62px;\n\tleft: 0;\n\tright: 0;\n}\n", ""]);
 
 	// exports
 
@@ -406,6 +411,36 @@
 			URL.revokeObjectURL(oldSrc);
 	}
 
+
+/***/ },
+/* 5 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	window.addEventListener("dragenter", function (e) {
+		var style = document.getElementById("send_photo").style;
+		style.display = "block";
+		style.position = "fixed";
+		style.top = 0;
+		style.left = 0;
+		style.right = 0;
+		style.bottom = 0;
+		style.width = "100%";
+		style.height = "100%";
+	});
+
+	window.addEventListener("drop", function (e) {
+		setTimeout(function () {
+			var style = document.getElementById("send_photo").style;
+			style.display = "none";
+		}, 10);
+	});
+
+	document.getElementById("send_photo").addEventListener("dragleave", function (e) {
+		var style = document.getElementById("send_photo").style;
+		style.display = "none";
+	});
 
 /***/ }
 /******/ ]);
