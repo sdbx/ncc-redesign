@@ -93,7 +93,7 @@
 
 
 	// module
-	exports.push([module.id, "/*\n\tOverwrite the style of ncc\n*/\n\n.chat_type_inr {\n\tmargin: 0;\n}\n.chat_room {\n\tpadding-bottom: 62px;\n}\n.chat_msgs .bl_pcs .blm > span {\n\tpadding: 0px 9px;\n}\n.chat_msgs .say {\n\tpadding-right: 60px;\n}\n", ""]);
+	exports.push([module.id, "/*\n\tOverwrite the style of ncc\n*/\n\n.chat_type_inr {\n\tmargin: 0;\n}\n.chat_room {\n\tpadding-bottom: 62px;\n}\n.chat_msgs .bl_pcs .blm > span {\n\tpadding: 0px 9px;\n}\n.chat_msgs .say {\n\tpadding-right: 60px;\n}\n.chat_new_msgs {\n\tbottom: 62px;\n\tleft: 0;\n\tright: 0;\n}", ""]);
 
 	// exports
 

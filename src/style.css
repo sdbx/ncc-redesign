@@ -14,3 +14,8 @@
 .chat_msgs .say {
 	padding-right: 60px;
 }
+.chat_new_msgs {
+	bottom: 62px;
+	left: 0;
+	right: 0;
+}
