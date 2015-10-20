@@ -27,11 +27,11 @@ module.exports = {
 			{
 				test: /\.jsx?$/,
 				exclude: /{node_modules|bower_components}/,
-				loader: "babel"
+				loader: "babel!eslint"
 			},
 			{
 				test: /\.css$/,
-				loader: "style-loader!css-loader"
+				loader: "style-loader!css-loader!csslint"
 			}
 		]
 	},
